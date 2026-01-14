@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfafa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0e6e6;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #8b4513;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  background-color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
+.losi {
+  background-color: #8b4513;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.losi a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.losi:hover {
+  background-color: #5c3310;
+}
+
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  border: 2px solid #ccc;     
+  border-radius: 10px;   
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.about {
+  max-width: 500px;
+}
+
+.about span {
+  background-color: #00ffff;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.imgage {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgage img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.imgage img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Section 2: Founders ===== */
+.section2 {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.founder-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.founder-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.founder-photos {
+  display: flex;
+  gap: 1rem;
+}
+
+.founder-photos img {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #2c3e50;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.founder-photos img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Section 3: Why We Started ===== */
+.section3 {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.poor-photos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.poor-photos img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.poor-photos img:hover {
+  transform: scale(1.05);
+}
+.section4 {
+  background-color: #fefefe;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .section1, .section2, .section3 {
+    padding: 1rem;
+  }
+
+  .founder-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .founder-photos {
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .imgage img, .poor-photos img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.section5 {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.impact-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.impact-list li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
